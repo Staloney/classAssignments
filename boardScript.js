@@ -46,14 +46,13 @@ const reviews = [
 var currentIndex = 0;
 
 function leftButton() {
-    //sets my index so I can page through
-    //allows me to go choose which index in my array to go to 
+    // Sets my index so I can page through
+    // Allows me to go choose which index in my array to go to 
     if (currentIndex > 0) {
         currentIndex--;
     }
-    else if(currentIndex == 0){
-        currentIndex = 3;
-    }
+    else currentIndex = 3;
+    
     
     // Get the elements in the HTML document
     const nameElement = document.getElementById("name");
@@ -73,7 +72,7 @@ function leftButton() {
 
 
 function rightButton() {
-    //allows me to go choose which index in my array to go to 
+    // Allows me to go choose which index in my array to go to 
     if (currentIndex < 3) {
         currentIndex++;
     }
